@@ -19,8 +19,7 @@
     --bg-gray: #DCDCDC;
     --header-color: #A9A9A9;
     --color-font-default: #696969;
-    --color-font-blue: #0000CD;
-    --color-font-form: #4682B4;
+    --color-font-blue: #0076b9;
     --color-font-black: #000;
     /* font sizes */
     --h1-font-size: 45px;
@@ -34,7 +33,6 @@
 .container {
     padding: 50px;
 }
-
 h1,
 h2,
 h3,
@@ -43,15 +41,12 @@ h5,
 h6 {
     font-weight: 500;
 }
-
 h1 {
-    font-size: 45px;
+    font-size: 40px;
 }
-
 h2 {
     font-size: 35px;
 }
-
 a {
     font-size: var(--btn-font-size);
 }
@@ -66,95 +61,94 @@ header {
     top: 0;
     left: 0;
 }
-
 header .headerNavigation {
     height: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
-
 header .headerNavigation .areaLogo img {
     max-width: 200px;
 }
-
+.areaMenu {
+    display:flex;
+}
 header .headerNavigation .menuNavigation {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 50px;
+    margin-left:50px;
 }
-
 header .headerNavigation ul {
     list-style: none;
     display: flex;
     align-items: center;
 }
-
 header .headerNavigation ul li {
     margin-right: 60px;
 }
-
 header .headerNavigation ul li:last-child {
     margin-right: 0;
 }
-
 header .headerNavigation ul li a {
     text-decoration: none;
     color: var(--header-color);
     letter-spacing: 1px;
 }
-
 header .headerNavigation ul li a:hover {
     transition: all ease .3s;
     color: var(--color-font-blue);
 }
-
 header .headerNavigation .languages {
     display: flex;
 }
-
 header .headerNavigation .languages img {
-    max-width: 50px;
-    cursor:pointer;
-}
-
-header .headerNavigation .languages img:first-child {
-    margin-right:20px;
-}
-.menuHamburger {
-    display: none;
-    max-width: 40px;
+    max-width:40px;
     cursor: pointer;
 }
-.menuOpened {
-    display:flex;
+header .headerNavigation .languages img {
+    margin-right: 10px;
 }
+header .headerNavigation .languages img:last-child {
+    margin-right:0;
+}
+.headerNavigation .menuMobile {
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    cursor:pointer;
+}
+.headerNavigation .menuMobile .barMenu {
+    transition:.5s all ease;
+    width:30px;
+    height:3px;
+    margin-bottom:7px;
+    border-radius:5px;
+    background-color:var(--color-font-black);
+}
+
 
 /* Banner apresentation */
 .bannerApresentation {
     height: calc(100vh - 150px);
-    background-image: url('../images/Banner.png');
+    background-image: url('../images/imagesproject/Banner.png');
     background-position: center;
     background-size: cover;
-    padding: 150px 150px 150px 10%;
-    padding-left: 10%;
+    padding: 150px 150px 150px 15%;
+    padding-left: 15%;
     margin-top: 150px;
 }
-
 .bannerApresentation .descApresentation {
     height: 100%;
 }
-
 .bannerApresentation .descApresentation h1 {
-    font-size: calc(60% + 4vmin);
+    max-width:350px;
+    font-size: calc(60% + 2.7vmin);
 }
-
 .bannerApresentation .descApresentation .bar {
-    width: 120px;
-    height: 5px;
+    width: 80px;
+    height: 4px;
     background-color: var(--color-font-blue);
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Area Inovation */
@@ -163,31 +157,26 @@ header .headerNavigation .languages img:first-child {
     flex-direction: column;
     align-items: center;
 }
-
 .areaInovation .contentInovation h2 {
     text-align: center;
     line-height: 40px;
     letter-spacing: 2px;
 }
-
 .areaInovation .contentInovation .areaIcons {
     margin-top: 100px;
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-
 .areaInovation .contentInovation .areaIcons .inovation {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .areaInovation .contentInovation .areaIcons .inovation img {
     max-width: 100px;
 }
-
 .areaInovation .contentInovation .areaIcons .inovation h2 {
     text-align: center;
     margin-top: 30px;
@@ -200,41 +189,35 @@ header .headerNavigation .languages img:first-child {
     padding: 15px 40px 60px;
     background-color: var(--bg-gray);
 }
-
 .areaBenefits .benefits {
     display: flex;
     justify-content: space-between;
 }
-
 .areaBenefits .benefits figure {
     margin-right: 30px;
 }
-
 .areaBenefits .benefits figure:last-child {
     margin-right: 0;
 }
-
 .areaBenefits .benefits figure img {
     max-width: 400px;
     width: 100%;
     border-radius: 10px;
 }
-
 .areaBenefits .benefits figure figcaption {
     margin-top: 15px;
     font-size: var(--normal-font-size);
 }
-
 .areaBenefits .benefits figure .knowMore {
     display: flex;
     align-items: center;
 }
-
 .areaBenefits .benefits figure .knowMore a {
+    display:flex;
+    align-items:center;
     margin-top: 10px;
     text-decoration: none;
 }
-
 .areaBenefits .benefits figure .knowMore img {
     max-width: 10px;
     margin-right: 5px;
@@ -244,31 +227,26 @@ header .headerNavigation .languages img:first-child {
 .technology {
     display: flex;
 }
-
 .technology img {
     width: 40%;
     border-radius: 10px;
 }
-
 .technology .descTechnology {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-left: 40px;
 }
-
 .technology .descTechnology p {
     max-width: 800px;
     margin-top: 15px;
     font-size: var(--small-font-size);
     line-height: 50px;
 }
-
 .technology .descTechnology .buttonKnowMore {
     display: flex;
     justify-content: flex-end;
 }
-
 .technology .descTechnology .buttonKnowMore a,
 .visionSolutions .solutions a {
     text-decoration: none;
@@ -281,18 +259,17 @@ header .headerNavigation .languages img:first-child {
 
 /* Soluções para sua visão */
 .visionSolutions {
-    height: 500px;
-    background-image: url('../images/img 5.png');
-    background-position: center;
-    background-size: cover;
+    height:500px;
+    background-image:url('../images/imagesproject/img\ 5-mo.png');
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
-
 .visionSolutions .solutions {
     height: 100%;
     display: flex;
     align-items: center;
 }
-
 .visionSolutions .solutions .descSolutions {
     width: 100%;
     display: flex;
@@ -300,11 +277,9 @@ header .headerNavigation .languages img:first-child {
     justify-content: center;
     align-items: center;
 }
-
 .visionSolutions .solutions .descSolutions h1 {
     color: var(--bg-default);
 }
-
 .visionSolutions .solutions a {
     margin-top: 10px;
 }
@@ -314,84 +289,72 @@ header .headerNavigation .languages img:first-child {
     display: flex;
     padding: 40px 100px 100px 60px;
 }
-
 .contactUs .areaAddress {
     width: 50%;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .contactUs .areaAddress img {
     max-width: 200px;
 }
-
 .contactUs .areaAddress address {
     font-size: var(--normal-font-size);
     line-height: 60px;
 }
-
 .contactUs .areaAddress address .phone,
 .contactUs .areaAddress address .email {
     display: flex;
     align-items: center;
 }
-
 .contactUs .areaAddress address .phone img,
 .contactUs .areaAddress address .email img {
     margin-right: 10px;
     max-width: 40px;
 }
-
 .contactUs form {
     padding-left: 30px;
     width: 50%;
-    border-left: 2px solid var(--color-font-form);
+    border-left: 2px solid var(--color-font-blue);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .contactUs form h2 {
     text-transform: uppercase;
-    color: var(--color-font-form);
+    color: var(--color-font-blue);
 }
-
 .contactUs form input {
     font-size: var(--normal-font-size);
     padding: 5px 10px;
     outline: 0;
-    color: var(--color-font-form);
-    border-bottom: 1px solid var(--color-font-form);
+    color: var(--color-font-blue);
+    border-bottom: 1px solid var(--color-font-blue);
     letter-spacing: 2px;
 }
-
 .contactUs form input::placeholder {
     font-size: var(--small-font-size);
-    color: var(--color-font-form);
+    color: var(--color-font-blue);
     letter-spacing: 2px;
 }
-
 .contactUs form p {
-    color: var(--color-font-form);
+    color: var(--color-font-blue);
     font-size: var(--normal-font-size);
 }
-
 .contactUs form p span {
     text-transform: capitalize;
     font-weight: bold;
-    color: var(--color-font-form);
+    color: var(--color-font-blue);
 }
 
 /* Area search city */
 .searchCity {
     height: 500px;
-    background-image: url('../images/img\ 6.png');
+    background-image: url('../images/imagesproject/img\ 6.png');
     background-position: center;
     background-size: cover;
 }
-
 .searchCity .search {
     height: 100%;
     display: flex;
@@ -399,23 +362,19 @@ header .headerNavigation .languages img:first-child {
     justify-content: center;
     align-items: center;
 }
-
 .searchCity .search img {
     max-width: 70px;
 }
-
 .searchCity .search h2 {
     margin: 20px 0 30px 0;
     text-align: center;
 }
-
 .searchCity .search form {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .searchCity .search form input[type=text] {
     outline: 0;
     border: 2px solid var(--color-font-default);
@@ -424,13 +383,11 @@ header .headerNavigation .languages img:first-child {
     font-size: var(--small-font-size);
     margin-right: 20px;
 }
-
 .searchCity .search form input[type=text]::placeholder {
     font-size: var(--small-font-size);
     color: var(--color-font-default);
     font-style: italic;
 }
-
 .searchCity .search form input[type=submit] {
     width: 120px;
     height: 50px;
@@ -445,46 +402,38 @@ header .headerNavigation .languages img:first-child {
 footer {
     padding: 60px;
 }
-
 footer .footerDetails .details {
     text-align: center;
-    font-size: var(--normal-font-size);
+    font-size: 15px
 }
-
 footer .footerDetails .socials {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-
 footer .footerDetails .socials>div:first-child {
     margin-right: 20px;
 }
-
 footer .footerDetails .socials img {
     max-width: 35px;
     margin-right: 10px;
 }
-
 footer .footerDetails .socials p {
-    font-size: var(--small-font-size);
+    font-size: 15px;
 }
-
 footer .footerDetails .socials .facebook,
 footer .footerDetails .socials .instagram {
     display: flex;
     align-items: center;
 }
-
 footer .footerDetails .logoAudax {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 footer .footerDetails .logoAudax img {
-    max-width: 200px;
+    max-width: 150px;
 }
 
 /* Responsividade */
@@ -501,41 +450,37 @@ footer .footerDetails .logoAudax img {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        background: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0,0,0,0.7);
     }
-
     header .headerNavigation .menuNavigation ul {
+        overflow-y:auto;
         width: 40%;
-        height:100%;
+        height: 100%;
         flex-direction: column;
         align-items: center;
         background-color: var(--bg-default);
     }
-
     header .headerNavigation ul li {
         margin: 0;
-        padding: 30px 0;
-        cursor: pointer;
+        padding:30px;
     }
-
     header .headerNavigation ul li a {
         font-size: var(--small-font-size);
     }
-
-    header .headerNavigation .menuHamburger {
-        display: block;
-    }
-
     header .headerNavigation .languages {
         width: 40%;
-        margin-top: 30px;
+    }
+    .headerNavigation .menuMobile {
+        display:flex;
+    }
+    header .headerNavigation .areaMenu .menuOpened {
+        display:flex;
     }
 
     /* Area benefits */
     .areaBenefits .benefits figure figcaption {
         font-size: calc(60% + 0.8vmin);
     }
-
     .areaBenefits .benefits figure .knowMore a {
         font-size: calc(60% + 0.5vmin);
     }
@@ -544,12 +489,10 @@ footer .footerDetails .logoAudax img {
     .technology .descTechnology h1 {
         font-size: calc(60% + 2.7vmin);
     }
-
     .technology .descTechnology p {
         line-height: 40px;
         font-size: calc(60% + 0.8vmin);
     }
-
     .technology .descTechnology .buttonKnowMore {
         margin-top: 20px;
     }
@@ -558,19 +501,15 @@ footer .footerDetails .logoAudax img {
     .contactUs {
         flex-direction: column;
     }
-
     .contactUs .areaAddress {
         width: 100%;
     }
-
     .contactUs .areaAddress {
         justify-content: flex-start;
     }
-
     .contactUs .areaAddress address {
         margin-top: 50px;
     }
-
     .contactUs form {
         width: 100%;
         height: 400px;
@@ -586,19 +525,16 @@ footer .footerDetails .logoAudax img {
     footer .footerDetails .details {
         font-size: calc(60% + 0.8vmin);
     }
-
     footer .footerDetails .socials p {
         font-size: calc(60% + 1vmin);
     }
 }
 
 @media only screen and (max-width:950px) {
-
     /* Area technology */
     .technology .descTechnology h1 {
         font-size: calc(60% + 2vmin);
     }
-
     .technology .descTechnology p {
         font-size: calc(60% + 0.5vmin);
     }
@@ -607,11 +543,9 @@ footer .footerDetails .logoAudax img {
     .areaInovation .contentInovation h2 {
         font-size: calc(60% + 2.5vmin);
     }
-
     .areaInovation .contentInovation .areaIcons .inovation img {
         max-width: 70px;
     }
-
     .areaInovation .contentInovation .areaIcons .inovation h2 {
         font-size: calc(60% + 1.5vmin);
     }
@@ -623,36 +557,51 @@ footer .footerDetails .logoAudax img {
 }
 
 @media only screen and (max-width:750px) {
-
     /* Header */
     header .headerNavigation .areaLogo img {
-        max-width:150px;
+        max-width: 150px;
     }
     header .headerNavigation .menuNavigation ul {
         width: 60%;
     }
     header .headerNavigation .menuHamburger {
-        max-width:30px;
+        max-width: 30px;
     }
+    .menuOpened {
+        display:flex;
+    }
+
+    /* Banner apresentation */
+    .bannerApresentation {
+        padding-left:30px;
+    }
+    .bannerApresentation h1 {
+        width:250px;
+    }
+    .bannerApresentation .descApresentation .bar {
+        width:50px;
+        height:3px;
+    }
+
     /* Area inovations */
     .areaInovation .contentInovation .areaIcons {
-        flex-direction:column;
+        flex-direction: column;
     }
     .areaInovation .contentInovation .areaIcons .inovation {
-        margin-bottom:50px;
+        margin-bottom: 50px;
     }
     .areaInovation .contentInovation .areaIcons .inovation:last-child {
-        margin-bottom:0;
+        margin-bottom: 0;
     }
+
     /* Technology */
     .technology {
         flex-direction: column;
         align-items: center;
     }
-
     .technology .descTechnology {
         margin-top: 50px;
-        padding-left:0;
+        padding-left: 0;
         text-align: center;
     }
     .technology .descTechnology .buttonKnowMore {
@@ -661,67 +610,87 @@ footer .footerDetails .logoAudax img {
     .technology img {
         width: 300px;
     }
+
     /* Area beneficios */
     .areaBenefits {
-        padding:50px;
+        padding: 50px;
     }
     .areaBenefits .benefits {
-        flex-direction:column;
-        align-items:center;
+        flex-direction: column;
+        align-items: center;
     }
     .areaBenefits .benefits figure {
-        margin-right:0;
-        margin-bottom:50px;
+        margin-right: 0;
+        margin-bottom: 50px;
     }
     .areaBenefits .benefits figure:last-child {
-        margin-bottom:0;
+        margin-bottom: 0;
     }
     .areaBenefits .benefits figure figcaption {
         font-size: calc(60% + 1.2vmin);
     }
+
+    .visionSolutions {
+        height:250px;
+    }
+    .technology .descTechnology .buttonKnowMore a, .visionSolutions .solutions a {
+        padding:5px 15px;
+        font-size:15px;
+    }
+
     /* Area contact Us */
     .contactUs .areaAddress address {
         font-size: calc(60% + 2.5vmin);
     }
+
     /* Area buscar cidade */
     .searchCity .search img {
-        max-width:50px;
+        max-width: 50px;
     }
     .searchCity .search h2 {
         font-size: calc(60% + 2vmin);
     }
     .searchCity .search form {
-        flex-direction:column;
-        align-items:center;
+        flex-direction: column;
+        align-items: center;
     }
     .searchCity .search form input[type=text] {
-        padding:10px;
-        max-width:100%;
-        margin-bottom:20px;
-        margin-right:0;
+        padding: 10px;
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
     }
     .searchCity .search form input[type=text]::placeholder {
         font-size: 14px;
     }
     .searchCity .search form input[type=submit] {
-        max-width:100%;
+        max-width: 100%;
     }
+
     /* Footer */
     footer .footerDetails .logoAudax img {
-        max-width:150px;
+        max-width: 150px;
     }
 }
-@media only screen and ( max-width:500px ) {
+
+@media only screen and (max-width:500px) {
     /* Header */
     header .headerNavigation .menuNavigation ul {
-        width:100%;
+        width: 100%;
     }
+
+    /* Banner apresentation */
+    .bannerApresentation h1 {
+        width:120px;
+    }
+
     /* Contact Us */
-    .contactUs .areaAddress address > div {
+    .contactUs .areaAddress address>div {
         font-size: calc(60% + 1vmin);
     }
-    .contactUs .areaAddress address .phone img, .contactUs .areaAddress address .email img {
-        max-width:25px;
+    .contactUs .areaAddress address .phone img,
+    .contactUs .areaAddress address .email img {
+        max-width: 25px;
     }
     .contactUs form h2 {
         font-size: var(--normal-font-size);
@@ -735,8 +704,9 @@ footer .footerDetails .logoAudax img {
     .contactUs form p {
         font-size: var(--btn-font-size);
     }
+
     /* Footer */
     footer .footerDetails .socials img {
-        max-width:25px;
+        max-width: 25px;
     }
 }

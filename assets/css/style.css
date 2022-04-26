@@ -102,10 +102,8 @@ header .headerNavigation .languages {
     display: flex;
 }
 header .headerNavigation .languages img {
-    max-width:40px;
+    max-width:30px;
     cursor: pointer;
-}
-header .headerNavigation .languages img {
     margin-right: 10px;
 }
 header .headerNavigation .languages img:last-child {
@@ -259,8 +257,8 @@ header .headerNavigation .languages img:last-child {
 
 /* Soluções para sua visão */
 .visionSolutions {
-    height:500px;
-    background-image:url('../images/imagesproject/img\ 5-mo.png');
+    height:800px;
+    background-image:url('../images/imagesproject/img\ 5-mo-2.png');
     background-position:center center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -303,6 +301,9 @@ header .headerNavigation .languages img:last-child {
     font-size: var(--normal-font-size);
     line-height: 60px;
 }
+.contactUs .areaAddress address p {
+    font-size:18px;
+}
 .contactUs .areaAddress address .phone,
 .contactUs .areaAddress address .email {
     display: flex;
@@ -314,6 +315,7 @@ header .headerNavigation .languages img:last-child {
     max-width: 40px;
 }
 .contactUs form {
+    height:200px;
     padding-left: 30px;
     width: 50%;
     border-left: 2px solid var(--color-font-blue);
@@ -411,7 +413,7 @@ footer .footerDetails .socials {
     justify-content: center;
     margin-top: 20px;
 }
-footer .footerDetails .socials>div:first-child {
+footer .footerDetails .socials>div {
     margin-right: 20px;
 }
 footer .footerDetails .socials img {
@@ -422,7 +424,8 @@ footer .footerDetails .socials p {
     font-size: 15px;
 }
 footer .footerDetails .socials .facebook,
-footer .footerDetails .socials .instagram {
+footer .footerDetails .socials .instagram,
+footer .footerDetails .socials .youtube {
     display: flex;
     align-items: center;
 }
@@ -503,6 +506,7 @@ footer .footerDetails .logoAudax img {
     }
     .contactUs .areaAddress {
         width: 100%;
+        margin-bottom:50px;
     }
     .contactUs .areaAddress {
         justify-content: flex-start;
@@ -671,6 +675,9 @@ footer .footerDetails .logoAudax img {
     footer .footerDetails .logoAudax img {
         max-width: 150px;
     }
+    footer .footerDetails .socials {
+        flex-wrap:wrap;
+    }
 }
 
 @media only screen and (max-width:500px) {
@@ -685,12 +692,15 @@ footer .footerDetails .logoAudax img {
     }
 
     /* Contact Us */
-    .contactUs .areaAddress address>div {
-        font-size: calc(60% + 1vmin);
+    .contactUs .areaAddress address {
+        font-size:12px;
     }
     .contactUs .areaAddress address .phone img,
     .contactUs .areaAddress address .email img {
         max-width: 25px;
+    }
+    .contactUs .areaAddress address p {
+        font-size:13px;
     }
     .contactUs form h2 {
         font-size: var(--normal-font-size);

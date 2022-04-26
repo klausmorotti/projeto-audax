@@ -1,6 +1,6 @@
 // Cancelando evento dos links e formularios
 // links 
-let links = document.querySelectorAll('form, a');
+let links = document.querySelectorAll('form, a:not(footer .socials a)');
 links.forEach((item) => {
     item.addEventListener('click', (event) => {
         event.preventDefault();

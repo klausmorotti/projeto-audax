@@ -15,6 +15,7 @@ let insertInfoPage = (objectInfo) => {
     let itemsMenu = document.querySelectorAll('.menuNavigation a');
     for( let i in itemsMenu ) {
         itemsMenu[i].innerHTML = objectInfo.optionsMenu[i];
+        itemsMenu[i].title = objectInfo.optionsMenu[i];
     }
 
     // MAIN
@@ -38,6 +39,7 @@ let insertInfoPage = (objectInfo) => {
     let descBenefits = document.querySelectorAll('.benefits .knowMore p');
     for( let i in descBenefits ) {
         descBenefits[i].innerHTML = objectInfo.descBenefits[i];
+        descBenefits[i].title = objectInfo.descBenefits[i];
     }
 
     // Tecnologia e inovação
@@ -49,7 +51,8 @@ let insertInfoPage = (objectInfo) => {
 
     // Contato
     document.querySelector('address p').innerHTML = objectInfo.contact;
-    document.querySelector('.contactUs form p').innerHTML = objectInfo.news;
+    document.querySelector('.contactUs .areaForm p').innerHTML = objectInfo.news;
+    document.querySelector('.contactUs form input[type=submit]').setAttribute('value', objectInfo.btnNews);
 
     // Buscar cidade
     document.querySelector('.searchCity h2').innerHTML = objectInfo.searchOptica;
@@ -62,5 +65,13 @@ let insertInfoPage = (objectInfo) => {
 
     // botões saiba mais
     document.querySelector('.visionSolutions a').innerHTML = objectInfo.btnKnowMore;
+    document.querySelector('.visionSolutions a').setAttribute('title', objectInfo.btnKnowMore);
     document.querySelector('.technology a').innerHTML = objectInfo.btnKnowMore;
+    document.querySelector('.technology a').setAttribute('title', objectInfo.btnKnowMore);
+
+    // botões de redes sociais
+    let socials = document.querySelectorAll('.socials > div a');
+    for( let i in socials ) {
+        socials[i].title = objectInfo.goToSocial[i];
+    }
 }

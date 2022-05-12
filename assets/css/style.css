@@ -17,7 +17,7 @@
     /* Cores */
     --bg-default: #FFF;
     --bg-gray: #DCDCDC;
-    --header-color: #A9A9A9;
+    --header-color: #818181;
     --color-font-default: #696969;
     --color-font-blue: #0076b9;
     --color-font-black: #000;
@@ -53,6 +53,7 @@ a {
 
 /* Header */
 header {
+    z-index:99;
     width: 100%;
     height: 150px;
     padding: 30px 50px;
@@ -127,20 +128,20 @@ header .headerNavigation .languages img:last-child {
 
 /* Banner apresentation */
 .bannerApresentation {
+    display:flex;
     height: calc(100vh - 150px);
     background-image: url('../images/imagesproject/Banner.png');
     background-position: center;
     background-size: cover;
-    padding: 150px 150px 150px 15%;
-    padding-left: 15%;
+    padding: 150px 150px 150px 12%;
+    padding-left: 13%;
     margin-top: 150px;
 }
 .bannerApresentation .descApresentation {
     height: 100%;
 }
 .bannerApresentation .descApresentation h1 {
-    max-width:350px;
-    font-size: calc(60% + 2.7vmin);
+    font-size: calc( 60% + 2vmin)
 }
 .bannerApresentation .descApresentation .bar {
     width: 80px;
@@ -162,6 +163,7 @@ header .headerNavigation .languages img:last-child {
 }
 .areaInovation .contentInovation .areaIcons {
     margin-top: 100px;
+    max-width:1300px;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -178,7 +180,7 @@ header .headerNavigation .languages img:last-child {
 .areaInovation .contentInovation .areaIcons .inovation h2 {
     text-align: center;
     margin-top: 30px;
-    color: var(--color-font-black);
+    color: var(--color-font-default);
     letter-spacing: 1px;
 }
 
@@ -188,6 +190,8 @@ header .headerNavigation .languages img:last-child {
     background-color: var(--bg-gray);
 }
 .areaBenefits .benefits {
+    margin:auto;
+    max-width:1300px;
     display: flex;
     justify-content: space-between;
 }
@@ -200,11 +204,11 @@ header .headerNavigation .languages img:last-child {
 .areaBenefits .benefits figure img {
     max-width: 400px;
     width: 100%;
-    border-radius: 10px;
 }
 .areaBenefits .benefits figure figcaption {
     margin-top: 15px;
-    font-size: var(--normal-font-size);
+    font-weight:600;
+    font-size: var(--btn-font-size);
 }
 .areaBenefits .benefits figure .knowMore {
     display: flex;
@@ -213,8 +217,9 @@ header .headerNavigation .languages img:last-child {
 .areaBenefits .benefits figure .knowMore a {
     display:flex;
     align-items:center;
-    margin-top: 10px;
+    margin-top: 5px;
     text-decoration: none;
+    font-size:15px;
 }
 .areaBenefits .benefits figure .knowMore img {
     max-width: 10px;
@@ -235,11 +240,14 @@ header .headerNavigation .languages img:last-child {
     justify-content: space-between;
     padding-left: 40px;
 }
+.technology .descTechnology h1 {
+    font-weight:600;
+}
 .technology .descTechnology p {
     max-width: 800px;
-    margin-top: 15px;
+    margin-top: 5px;
     font-size: var(--small-font-size);
-    line-height: 50px;
+    line-height: 40px;
 }
 .technology .descTechnology .buttonKnowMore {
     display: flex;
@@ -257,8 +265,8 @@ header .headerNavigation .languages img:last-child {
 
 /* Soluções para sua visão */
 .visionSolutions {
-    height:800px;
-    background-image:url('../images/imagesproject/img\ 5-mo-2.png');
+    height:500px;
+    background-image:url('../images/imagesproject/img\ 5.png');
     background-position:center center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -267,19 +275,24 @@ header .headerNavigation .languages img:last-child {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content:center;
+}
+.visionSolutions .solutions .desc {
+    width:100%;
 }
 .visionSolutions .solutions .descSolutions {
-    width: 100%;
-    display: flex;
+    width:600px;
+    display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
 .visionSolutions .solutions .descSolutions h1 {
     color: var(--bg-default);
 }
 .visionSolutions .solutions a {
     margin-top: 10px;
+    width:200px;
 }
 
 /* Area contact us */
@@ -288,14 +301,8 @@ header .headerNavigation .languages img:last-child {
     padding: 40px 100px 100px 60px;
 }
 .contactUs .areaAddress {
-    width: 50%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.contactUs .areaAddress img {
-    max-width: 200px;
+    width: 60%;
+    height:auto;
 }
 .contactUs .areaAddress address {
     font-size: var(--normal-font-size);
@@ -304,47 +311,75 @@ header .headerNavigation .languages img:last-child {
 .contactUs .areaAddress address p {
     font-size:18px;
 }
+.contactUs .areaAddress address .location p {
+    line-height:30px;
+}
+.contactUs .areaAddress address .audaxEua {
+    font-weight:600;
+    font-size:20px;
+}
 .contactUs .areaAddress address .phone,
-.contactUs .areaAddress address .email {
+.contactUs .areaAddress address .email,
+.contactUs .areaAddress address .location {
     display: flex;
-    align-items: center;
+    align-items:center;
+    height:60px;
+    margin-bottom:10px;
 }
 .contactUs .areaAddress address .phone img,
-.contactUs .areaAddress address .email img {
+.contactUs .areaAddress address .email img,
+.contactUs .areaAddress address .location img {
     margin-right: 10px;
     max-width: 40px;
 }
-.contactUs form {
-    height:200px;
+.contactUs .areaForm {
+    height:280px;
     padding-left: 30px;
-    width: 50%;
+    width: 40%;
     border-left: 2px solid var(--color-font-blue);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.contactUs form h2 {
+.contactUs .areaForm h2 {
     text-transform: uppercase;
     color: var(--color-font-blue);
 }
-.contactUs form input {
-    font-size: var(--normal-font-size);
+.contactUs .areaForm form {
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+.contactUs .areaForm form input {
+    width:100%;
+    font-size: var(--btn-font-size);
     padding: 5px 10px;
     outline: 0;
     color: var(--color-font-blue);
     border-bottom: 1px solid var(--color-font-blue);
-    letter-spacing: 2px;
 }
-.contactUs form input::placeholder {
-    font-size: var(--small-font-size);
+.contactUs .areaForm form input::placeholder {
+    font-size: var(--btn-font-size);
     color: var(--color-font-blue);
     letter-spacing: 2px;
 }
-.contactUs form p {
-    color: var(--color-font-blue);
-    font-size: var(--normal-font-size);
+.contactUs .areaForm form input[type=submit] {
+    margin-top:10px;
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: var(--color-font-blue);
+    color: var(--bg-default);
+    border-radius: 30px;
+    text-align: center;
+    font-size:15px;
+    cursor:pointer;
 }
-.contactUs form p span {
+.contactUs .areaForm p {
+    color: var(--color-font-blue);
+    font-size: var(--btn-font-size);
+}
+.contactUs .areaForm p span {
+    font-size: var(--btn-font-size);
     text-transform: capitalize;
     font-weight: bold;
     color: var(--color-font-blue);
@@ -391,7 +426,7 @@ header .headerNavigation .languages img:last-child {
     font-style: italic;
 }
 .searchCity .search form input[type=submit] {
-    width: 120px;
+    width: 230px;
     height: 50px;
     border-radius: 20px;
     font-size: var(--btn-font-size);
@@ -414,20 +449,19 @@ footer .footerDetails .socials {
     margin-top: 20px;
 }
 footer .footerDetails .socials>div {
-    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
 }
 footer .footerDetails .socials img {
     max-width: 35px;
     margin-right: 10px;
 }
-footer .footerDetails .socials p {
-    font-size: 15px;
-}
-footer .footerDetails .socials .facebook,
-footer .footerDetails .socials .instagram,
-footer .footerDetails .socials .youtube {
-    display: flex;
-    align-items: center;
+footer .footerDetails .socials a {
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    font-size: 14px;
 }
 footer .footerDetails .logoAudax {
     margin-top: 50px;
@@ -436,7 +470,7 @@ footer .footerDetails .logoAudax {
     align-items: center;
 }
 footer .footerDetails .logoAudax img {
-    max-width: 150px;
+    max-width: 200px;
 }
 
 /* Responsividade */
@@ -480,6 +514,19 @@ footer .footerDetails .logoAudax img {
         display:flex;
     }
 
+    /* Banner */
+    .bannerApresentation {
+        padding-left:12%;
+    }
+    .bannerApresentation .descApresentation h1 {
+        font-size: calc( 60% + 1vmin)
+    }
+
+    /* Area inovation */
+    .areaInovation .contentInovation h2 {
+        font-size: calc(60% + 1.5vmin);
+    }
+
     /* Area benefits */
     .areaBenefits .benefits figure figcaption {
         font-size: calc(60% + 0.8vmin);
@@ -490,7 +537,7 @@ footer .footerDetails .logoAudax img {
 
     /* Area Technology */
     .technology .descTechnology h1 {
-        font-size: calc(60% + 2.7vmin);
+        font-size: calc(60% + 2.6vmin);
     }
     .technology .descTechnology p {
         line-height: 40px;
@@ -506,7 +553,7 @@ footer .footerDetails .logoAudax img {
     }
     .contactUs .areaAddress {
         width: 100%;
-        margin-bottom:50px;
+        margin-bottom:80px;
     }
     .contactUs .areaAddress {
         justify-content: flex-start;
@@ -514,9 +561,13 @@ footer .footerDetails .logoAudax img {
     .contactUs .areaAddress address {
         margin-top: 50px;
     }
+    .contactUs .areaForm {
+        max-width:50vw;
+        width:100%;
+    }
     .contactUs form {
         width: 100%;
-        height: 400px;
+        height: 250px;
         margin-top: 50px;
     }
 
@@ -537,16 +588,22 @@ footer .footerDetails .logoAudax img {
 @media only screen and (max-width:950px) {
     /* Area technology */
     .technology .descTechnology h1 {
-        font-size: calc(60% + 2vmin);
+        font-size: calc(60% + 1vmin);
     }
     .technology .descTechnology p {
         font-size: calc(60% + 0.5vmin);
     }
 
-    /* Area inovação */
-    .areaInovation .contentInovation h2 {
-        font-size: calc(60% + 2.5vmin);
+    .bannerApresentation {
+        padding: 150px 150px 150px 8%;
     }
+    
+    .bannerApresentation .descApresentation h1 {
+        width:100%;
+        font-size: calc( 60% + 1.2vmin)
+    }
+
+    /* Area innovation */
     .areaInovation .contentInovation .areaIcons .inovation img {
         max-width: 70px;
     }
@@ -554,9 +611,34 @@ footer .footerDetails .logoAudax img {
         font-size: calc(60% + 1.5vmin);
     }
 
-    /* Area Soluções para sua visão  */
+    /* Technology */
+    .technology .descTechnology p {
+        line-height:30px;
+    }
+
+    /* Area vision solutions  */
+    .visionSolutions .solutions .desc .descSolutions {
+        width:400px;
+    }
     .visionSolutions .solutions .descSolutions h1 {
         font-size: calc(60% + 2.5vmin);
+    }
+
+    /* Footer */
+    footer .footerDetails .socials {
+        max-width:100%;
+        flex-wrap:wrap;
+    }
+    footer .footerDetails .socials > div {
+        max-width:250px;
+        width:100%;
+        margin-bottom:20px;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .bannerApresentation {
+        padding: 150px 150px 150px 5%;
     }
 }
 
@@ -577,14 +659,19 @@ footer .footerDetails .logoAudax img {
 
     /* Banner apresentation */
     .bannerApresentation {
-        padding-left:30px;
+        padding:20px;
     }
-    .bannerApresentation h1 {
-        width:250px;
+    .bannerApresentation .descApresentation h1 {
+        width:180px;
+        font-size:25px;
     }
     .bannerApresentation .descApresentation .bar {
         width:50px;
         height:3px;
+    }
+
+    .areaInovation .contentInovation h2 {
+        font-size:calc(60% + 1.2vmin);;
     }
 
     /* Area inovations */
@@ -592,7 +679,10 @@ footer .footerDetails .logoAudax img {
         flex-direction: column;
     }
     .areaInovation .contentInovation .areaIcons .inovation {
-        margin-bottom: 50px;
+        margin-bottom: 70px;
+    }
+    .areaInovation .contentInovation .areaIcons .inovation h2 {
+        margin-top:10px;
     }
     .areaInovation .contentInovation .areaIcons .inovation:last-child {
         margin-bottom: 0;
@@ -615,7 +705,7 @@ footer .footerDetails .logoAudax img {
         width: 300px;
     }
 
-    /* Area beneficios */
+    /* Area benefits */
     .areaBenefits {
         padding: 50px;
     }
@@ -635,19 +725,41 @@ footer .footerDetails .logoAudax img {
     }
 
     .visionSolutions {
+        padding:30px;
         height:250px;
     }
+    
     .technology .descTechnology .buttonKnowMore a, .visionSolutions .solutions a {
         padding:5px 15px;
         font-size:15px;
     }
 
-    /* Area contact Us */
+    /* Contact Us */
     .contactUs .areaAddress address {
-        font-size: calc(60% + 2.5vmin);
+        font-size: calc( 60% + 2vmin );
+    }
+    .contactUs .areaAddress address p {
+        font-size:15px;
+    }
+    .contactUs .areaAddress a {
+        display:flex;
+        justify-content:center;
+    }
+    .contactUs .areaAddress img {
+        max-width:150px;
+    }
+    .contactUs .areaForm {
+        max-width:100%;
+    }
+    .contactUs .areaForm h2 {
+        font-size:25px;
+    }
+    .contactUs .areaForm p,
+    .contactUs .areaForm p span {
+        font-size:15px;
     }
 
-    /* Area buscar cidade */
+    /* Search City */
     .searchCity .search img {
         max-width: 50px;
     }
@@ -668,35 +780,93 @@ footer .footerDetails .logoAudax img {
         font-size: 14px;
     }
     .searchCity .search form input[type=submit] {
-        max-width: 100%;
+        width:275px;
+        max-width:100%;
+        border-radius:30px;
     }
 
     /* Footer */
     footer .footerDetails .logoAudax img {
         max-width: 150px;
     }
-    footer .footerDetails .socials {
-        flex-wrap:wrap;
+    footer .footerDetails .socials > div {
+        max-width:170px;
+        margin-bottom:10px;
     }
 }
 
 @media only screen and (max-width:500px) {
     /* Header */
+    header {
+        height:120px;
+    }
+    header .headerNavigation .areaLogo img {
+        max-width:100px;
+    }
     header .headerNavigation .menuNavigation ul {
         width: 100%;
     }
-
-    /* Banner apresentation */
-    .bannerApresentation h1 {
-        width:120px;
+    header .headerNavigation .menuNavigation {
+        top:120px;
+        height: calc(100vh - 120px);
     }
 
+    /* Banner apresentation */
+    .bannerApresentation {
+        height:100vh;
+        background-position:center top;
+        margin-top:0;
+        padding:0;
+        justify-content: flex-end;
+        background-position:center;
+        padding:20px;
+    }
+    .bannerApresentation .descApresentation {
+        display:inline-flex;
+        flex-direction:column;
+        align-items:flex-end;
+        margin-top:120px;
+        height: calc(100vh - 120px);
+    }
+    .bannerApresentation .descApresentation h1 {
+        font-size:25px;
+        font-weight:400;
+        line-height:35px;
+        max-width:250px;
+        color: var(--bg-default);
+        text-align: right;
+    }
+
+    .visionSolutions .solutions .descSolutions {
+        align-items:center;
+    }
+    .technology .descTechnology .buttonKnowMore a, .visionSolutions .solutions a {
+        margin-left:0;
+        width:150px;
+    }
+    .visionSolutions .solutions {
+        align-items:flex-end;
+    }
+    .visionSolutions .solutions .desc .descSolutions {
+        width:100%;
+    }
+    
     /* Contact Us */
+    .contactUs {
+        padding:40px 30px 50px 30px;
+    }
     .contactUs .areaAddress address {
         font-size:12px;
     }
+    .contactUs .areaAddress address p {
+        font-size:10px;
+    }
+    .contactUs .areaAddress address .audaxEua {
+        font-size:15px;
+    }
     .contactUs .areaAddress address .phone img,
-    .contactUs .areaAddress address .email img {
+    .contactUs .areaAddress address .email img,
+    .contactUs .areaAddress address .location img {
         max-width: 25px;
     }
     .contactUs .areaAddress address p {
@@ -705,18 +875,28 @@ footer .footerDetails .logoAudax img {
     .contactUs form h2 {
         font-size: var(--normal-font-size);
     }
-    .contactUs form input {
-        font-size: var(--btn-font-size);
+    .contactUs .areaForm form input {
+        font-size: 12px;
     }
-    .contactUs form input::placeholder {
-        font-size: var(--btn-font-size);
+    .contactUs .areaForm form input::placeholder {
+        font-size: 15px;
     }
     .contactUs form p {
         font-size: var(--btn-font-size);
     }
 
+    /* Search city */
+    .searchCity {
+        padding:0 30px;
+    }
+
     /* Footer */
     footer .footerDetails .socials img {
         max-width: 25px;
+    }
+    footer .footerDetails .socials > div {
+        width:100%;
+        margin-bottom:30px;
+        margin-right:0;
     }
 }

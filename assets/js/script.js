@@ -14,13 +14,12 @@ links.forEach((item) => {
     })
 })
 // Scroll suave para o inicio da tela ao clicar nas logos audax
-let images = document.querySelectorAll('.contactUs img, footer .logoAudax img');
-images.forEach((item) => {
-    item.addEventListener('click', () => {
-        let top = document.querySelector('header').scrollTop;
-        window.scrollTo({
-            top:top,
-            behavior:'smooth'
-        })
+let image = document.querySelector('footer .logoAudax img');
+
+image.addEventListener('click', () => {
+    let top = document.querySelector('header').scrollTop;
+    window.scrollTo({
+        top: top,
+        behavior: 'smooth'
     })
 })

@@ -1,5 +1,4 @@
 # PROJETO AUDAX
-<img src="" id="topo" alt="Gif Project">
 
 ## 📄 Explicação
 
@@ -38,5 +37,3 @@ O usuário conseguirá também:
 
 ## 🤝 Colaboradores
 
-
-<a href="">Voltar para o topo</a>

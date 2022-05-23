@@ -11,7 +11,6 @@ A página contém o recurso de internacionalização, ou seja, a página é tamb
 O usuário conseguirá também:
 * Deixar seu email disponível para receber notícias mais importantes e novidades a sobre Audax Vision
 * Filtrar as ópticas parceiras da Audax por meio de um campo de busca
-* Acessar as redes sociais da Audax para acompanha-los
 
 ## 🎯 Etapas do projeto
 

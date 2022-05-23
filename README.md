@@ -37,6 +37,19 @@ O usuário conseguirá também:
 
 ## 🤝 Colaboradores
 
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/84789400?v=4" width="160px;" height="160px" style="border-radius:50%" alt="Foto de Klaus Morotti"/><br>
+        <sub>
+          <b>Klaus Morotti</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## 📝 Licença
 
 Este projeto está sob licença. Consulte o arquivo <a href="https://github.com/klausmorotti/projeto-audax/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.

@@ -37,3 +37,7 @@ O usuário conseguirá também:
 
 ## 🤝 Colaboradores
 
+## 📝 Licença
+
+Este projeto está sob licença. Consulte o arquivo <a href="https://github.com/klausmorotti/projeto-audax/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.
+

@@ -17,22 +17,28 @@ O usuário conseguirá também:
 * Deixar seu email disponível para receber notícias mais importantes e novidades a sobre Audax Vision
 * Filtrar as ópticas parceiras da Audax por meio de um campo de busca
 
+## 📁 Páginas
+
+O site tem no total 1 página, sendo ela
+
+- **Página principal:** A página principal que divulga por completo as informações da empresa.
+
 ## 🎯 Etapas do projeto
 
-✔️ Desenvolvimento da lógica da estrutura ja recebida pronta por parte da empresa </br>
-✔️ Separação de imagens, ícones, fontes, cores </br>
-✔️ Criação de variáveis de padronização como escala tipográfica, áreas reaproveitáveis, cores </br>
-✔️ Adicionar links que direcionaram para outras páginas futuramente desenvolvidas </br>
-✔️ Criação de campo para adicionar email e receber noticias e novidades </br>
-✔️ Criação de campo para buscar ópticas parceiras da Audax </br>
-✔️ Adicionando links para ancorar o usuário as redes sociais da empresa </br>
-✔️ Tornando o projeto responsivo</br>
-✔️ Recurso de internacionalização para tradução do conteúdo da página para os idiomas inglês e espanhol </br>
-✔️ Menu de navegação adaptado para versão mobile </br>
-✔️ Adicionando recurso de scroll suave ao inicio da tela </br>
-✔️ Enviando para aprovação da empresa </br>
-✔️ Fazendo alterações finais solicitadas pela empresa </br>
-✔️ Finalizado
+✔️ Desenvolvimento da lógica da estrutura ja recebida pronta por parte da empresa. </br>
+✔️ Separação de imagens, ícones, fontes, cores. </br>
+✔️ Criação de variáveis de padronização como escala tipográfica, áreas reaproveitáveis, cores. </br>
+✔️ Adicionar links que direcionaram para outras páginas futuramente desenvolvidas. </br>
+✔️ Criação de campo para adicionar email e receber noticias e novidades. </br>
+✔️ Criação de campo para buscar ópticas parceiras da Audax. </br>
+✔️ Adicionando links para ancorar o usuário as redes sociais da empresa. </br>
+✔️ Tornando o projeto responsivo. </br>
+✔️ Recurso de internacionalização para tradução do conteúdo da página para os idiomas inglês e espanhol. </br>
+✔️ Menu de navegação adaptado para versão mobile. </br>
+✔️ Adicionando recurso de scroll suave ao inicio da tela. </br>
+✔️ Enviando para aprovação da empresa. </br>
+✔️ Fazendo alterações finais solicitadas pela empresa. </br>
+✔️ Projeto Finalizado.
 
 ## 🚀 Tecnologias
 * <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a>
@@ -58,3 +64,4 @@ O usuário conseguirá também:
 
 Este projeto está sob licença. Consulte o arquivo <a href="https://github.com/klausmorotti/projeto-audax/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.
 
+<a href="#top">Volte para o topo</a>
